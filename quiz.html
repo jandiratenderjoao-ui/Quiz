@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body onload="primeTela()">
+
+      <main class="quiz">
+
+        <section class="start-screen" id="startScreen">
+            <span class="label">FRONTEND QUIZ</span>
+            <h1>Seja Bem-Vindo<br></h1>
+            <p>Teste as suas capacidades em SEAC e TLP...
+          </p>       
+
+          <button id="startBtn">Iniciar Quiz</button>      
+       </section>
+
+       <section class="quiz-screen" id="quizScreen">
+           <div class="quiz-top">
+             <span id="questionNumber">Questão 1 de 10</span>
+
+             <span id="score">score:0</span>
+           </div>
+
+           <div class="progress">
+                <div class="progress-bar" id="progressBar"></div>            
+           </div>
+
+           <div class="question">   
+                <span class="label">question</span>  
+                <h2 id="questionText">questionText</h2>                              
+           </div>
+
+            <div class="options-list" id="options"></div>
+           
+
+            <button class="next-btn" id="nextBtn">
+                Próxima Questão
+            </button>
+        </section>
+        
+        <section class="result-screen" id="resultScreen">
+            <span class="label">QUIZCOMPLETO</span>
+            <h1 id="resultTitle">bom trabalho</h1>
+
+            <div class="result-score">
+                <strong id="finalscore">0/10</strong>
+                <span id="percentage">0%</span>
+            </div>
+
+            <p id="resultMessage"></p>
+
+            <button id="restartBtn">Play Again</button>
+        </section>    
+        
+    </main>
+<script src="quiz.js"></script>
+</body>
+</html>
